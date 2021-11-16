@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  border: 0;
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+  font-size: 18px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 16px;
+  text-align: center;
+}
+
+.container {
+  height: 150px;
+  background-color: whitesmoke;
+  
+}
+
+.box {
+  min-height: 75px;
+  width: 125px;
+  background-color: dodgerblue;
+  border: 2px solid lightgrey;
+  margin: 10px 30px; 
+}
+#flex{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  /*
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;*/
+  flex-flow: row-reverse nowrap;
+}
+
+#flex .box{
+  /*
+  flex-grow: 1;
+  flex-shrink: 2;
+  flex-basis: 150px;*/
+  flex: 1 2 150px;
+}
